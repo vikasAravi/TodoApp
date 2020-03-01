@@ -1,0 +1,39 @@
+{
+  "Todos": [
+    {
+      "title": "Mathsmatics",
+      "description": "Addition Problems",
+      "priority": "Urgent",
+      "status": "Completed",
+      "id": 1
+    },
+    {
+      "title": "Data Structures",
+      "description": "LinkedList Problems",
+      "priority": "Urgent",
+      "status": "On the way",
+      "id": 2
+    },
+    {
+      "title": "Physics",
+      "description": "Newtons Law",
+      "priority": "Low",
+      "status": "In Progress",
+      "id": 3
+    },
+    {
+      "title": "Vegetables",
+      "description": "Tomatoes",
+      "priority": "High",
+      "status": "Pending",
+      "id": 4
+    },
+    {
+      "title": "Maths",
+      "description": "Limits",
+      "priority": "High",
+      "status": "Pending",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+
+<div class="container">
+    <h1>Update Todo</h1>
+    <form>
+      <div class="form-group">
+        <input mdbInput placeholder = "Title" type="text" name = "title" [(ngModel)] = "todoDetails.title" class="form-control form-control-sm">
+      </div>
+
+      <div class="form-group">
+       <input mdbInput placeholder = "Description" type="text" name = "description" [(ngModel)] = "todoDetails.description" class="form-control form-control-sm">
+      </div>
+
+        <div class="form-group">
+        <select class="form-control" placeholder = "Priority" type = "text"
+        name = "priority" [(ngModel)]="todoDetails.priority">
+            <option *ngFor="let priority of priorities" [value]="priority.value">{{priority.viewValue}}</option>
+        </select>
+        
+      </div>
+
+        <div class="form-group">
+       <select class="form-control"  name = "status"  placeholder = "Status" type = "text" required
+          [(ngModel)]="todoDetails.status"  required>
+            <option *ngFor="let status of statusOptions" [value]="status.value">{{status.viewValue}}</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-success" (click) = "updateTodo()">Submit</button>
+
+    </form>
+</div>
